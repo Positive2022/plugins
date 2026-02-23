@@ -29,7 +29,6 @@ export class YtDlpPlugin extends PlayableExtractorPlugin {
     const info = await json(url, {
       dumpSingleJson: true,
       noWarnings: true,
-      noCallHome: true,
       preferFreeFormats: true,
       skipDownload: true,
       simulate: true,
@@ -60,7 +59,6 @@ export class YtDlpPlugin extends PlayableExtractorPlugin {
     const info = await json(song.url, {
       dumpSingleJson: true,
       noWarnings: true,
-      noCallHome: true,
       preferFreeFormats: true,
       skipDownload: true,
       simulate: true,
